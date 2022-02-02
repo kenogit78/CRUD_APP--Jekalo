@@ -31,7 +31,7 @@ function User({users, deleteUser}) {
                     <li  className='name'>{user.date_of_birth}</li>
                     <li 
                     className='trash'
-                    onClick={ () =>{ deleteUser(user.username); window.location.reload(false) }}
+                    onClick={ () =>{ deleteUser(user.username) }}
                     ><img src={Trash} alt={Trash} /></li>
                 </ul>
             </section>

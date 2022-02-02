@@ -20,7 +20,6 @@ function UserForm() {
   const getUsers = async() =>{ 
     await getApi('users').then(data => {
       let response = data.data;
-      console.log(response)
       setUsers(response)
     })
   }
@@ -38,14 +37,13 @@ function UserForm() {
   const deleteUser = (username) => {
     deleteApi(username)
     .then((response) => {
-          console.log(response);
           return response
         }, (error) => {
           console.log(error);
         });
       }
       
-  //handles multiple form input changes   
+  //handles multiple form input changes------->
   function handleChange(evt) {
     const value = evt.target.value;
     setState({

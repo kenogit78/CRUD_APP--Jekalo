@@ -13,6 +13,6 @@ export const postApi = (url, data) => {
 }
 
 export const deleteApi = (username) => {
-    return api.delete(username).then((response) => response).catch(error => error.response)
+    return api.delete(username).then((response) => response).then(() => window.location.reload(false)).catch(error => error.response)
 }
 
