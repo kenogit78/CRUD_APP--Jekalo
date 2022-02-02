@@ -1,0 +1,83 @@
+.user{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.user_header{
+    width: 869px;
+    height: 41px;
+    background: rgba(17, 70, 143, 0.04);
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.user_header p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000; 
+}
+
+.user_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    width: 869px;
+    height: 47px;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.user li{
+    list-style: none;
+}
+
+
+.user ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user .name_details{
+    width: 400px;
+}
+.user .name_details .name{
+    width: 100px;
+}
+
+.user .name_prefix{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #11468F;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.user .date_delete {
+    width: 200px;
+}
+
+.user .date_delete .trash{
+    width:50px
+}
+
+.user .date_delete .trash:hover{
+    cursor: pointer;
+}

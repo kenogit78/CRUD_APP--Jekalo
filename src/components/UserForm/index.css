@@ -1,0 +1,71 @@
+
+.user_list{
+    padding: 4em 0 ;
+}
+
+.input-form{
+    display: flex;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-div label{
+    color: #11468F;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.input-div input{
+    width: 220px;
+    height: 47px;
+    border: 0.5px solid rgba(17, 70, 143, 0.47);
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #999999;
+    padding: 12px;
+    margin: 0 20px 10px 0;
+}
+
+.input-div input{
+    width: 220px;
+    height: 47px;
+    border: 0.5px solid rgba(17, 70, 143, 0.47);
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #999999;
+}
+
+.input-form button{
+    width: 220px;
+    height: 47px;
+    background: #11468F;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 28px;
+}
+
+.input-form button:hover {
+   cursor: pointer;
+}
