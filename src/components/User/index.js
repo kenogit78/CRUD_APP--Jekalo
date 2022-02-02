@@ -4,20 +4,14 @@ import Trash from '../../assets/trash.svg'
 
 
 function User({users, deleteUser}) {
- 
   return (
-
-  <div className='user'>
-    
+  <div className='user'>  
     <div className='user_header'>
         <p> Users</p>
     </div>
     {
-        users ?  users.map((user) => (
-    
-        
+        users ?  users.map((user) => ( 
         <div className='user_content'>
-        
             <section className='name_details'>        
                 <ul >
                     <li className='name_prefix'>{user.name_prefix} </li>
@@ -41,8 +35,6 @@ function User({users, deleteUser}) {
     ): "Loading data"
 }      
   </div>
-
-
   )
 }
 

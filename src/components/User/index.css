@@ -44,7 +44,6 @@
     width: 100%
 }
 
-
 .user ul{
     width: 100%;
     display: flex;
@@ -55,6 +54,7 @@
 .user .name_details{
     width: 400px;
 }
+
 .user .name_details .name{
     width: 100px;
 }
@@ -90,11 +90,9 @@
 @media screen and (max-width:898px) {
     .user_header, .user_content{
         max-width: 90%;
-        overflow-x: hidden;
-        
+        overflow-x: hidden; 
     }
 }
-
 
 @media screen and (max-width:385px) {
     .user_content{
@@ -114,18 +112,14 @@
         width: 200px;
     }
     .user .name_details .name{
-        /* width: 50px; */
         flex:1;
         margin: 0 8px;
     }
     .user .date_delete {
-        /* width: 100px; */
         flex: 1;
         margin: 0 3px;
     }
     .user .name_prefix{
-        width: 30px;
-        
-    }
-       
+        width: 30px;  
+    }   
 }

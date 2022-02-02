@@ -7,13 +7,16 @@ import './index.css'
 function UserForm() {
 
   const [users, setUsers] = useState('');
+  const [value, setValue] = useState('Date of Birth');
   const [state, setState] = React.useState({
     firstName: "", lastName: "", username: "", dob: ""
   });
 
+  
   useEffect(() => {
     getUsers()
     }, []);
+
 
   //get, post and delete function ------->
 
@@ -74,7 +77,6 @@ function UserForm() {
           name="firstName"
           value={state.firstName}
           onChange={handleChange}
-          className='input'
         />
       
       <label>Last name</label>
@@ -84,7 +86,6 @@ function UserForm() {
           name="lastName"
           value={state.lastName}
           onChange={handleChange}
-          className='input'
         />      
       </div>
 
@@ -96,17 +97,16 @@ function UserForm() {
           name="username"
           value={state.username}
           onChange={handleChange}
-          className='input'
         />
   
       <label> Date of Birth</label>
         <input
-          placeholder='Date of Birth'
+          placeholder={ value }
           type="text"
           name="dob"
+          onClick={ () => setValue('DD/MM/YYYY')}
           value={state.dob}
           onChange={handleChange}
-          className='input'
         />    
       </div>
 

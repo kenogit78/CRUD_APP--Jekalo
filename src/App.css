@@ -2,12 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: Roboto;
 }
 
-body {
-  font-family: Roboto;
+.App{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,18 +14,14 @@ body {
 }
 
 @media screen and (max-width:568px) {
-  body {
+  .App {
     align-items:baseline;
-  }
-
-  
+  } 
 }
-@media screen and (max-width:380px) {
 
+@media screen and (max-width:380px) {
   .App{
     max-width: 350px;
     overflow-x: hidden;
-  }
-
-  
+  } 
 }
