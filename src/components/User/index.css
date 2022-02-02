@@ -1,7 +1,9 @@
 .user{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin: 30px 0;
+    margin: 30px 10px;
 }
 
 .user_header{
@@ -80,4 +82,47 @@
 
 .user .date_delete .trash:hover{
     cursor: pointer;
+}
+
+
+@media screen and (max-width:1080px) {
+    
+    
+}
+
+
+@media screen and (max-width:898px) {
+
+    .user_header{
+        width: 80%;
+    }
+    .user_content{
+        width: 80%;
+
+    }
+
+    
+}
+
+@media screen and (max-width:568px) {
+
+    .user_header{
+        width: 70%;
+    }
+    .user_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-style: normal;
+        width: 70%;
+        height: 47px;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        margin: 10px 0;
+    }
+
+    
 }

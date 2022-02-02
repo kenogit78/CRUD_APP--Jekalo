@@ -110,15 +110,15 @@ function UserForm() {
         />    
       </div>
 
+      <div>
           <button 
             onClick={ handleSubmit }
             className='input-button'>
               Submit
           </button>
-    
+      </div>
       
     </form>
-
 
     <User users={users} deleteUser={deleteUser} /> 
 

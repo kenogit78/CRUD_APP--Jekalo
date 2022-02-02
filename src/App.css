@@ -11,5 +11,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width:568px) {
+  body {
+    align-items:baseline;
+  }
+
   
 }
