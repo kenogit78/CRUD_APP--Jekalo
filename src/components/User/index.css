@@ -85,44 +85,18 @@
 }
 
 
-@media screen and (max-width:1080px) {
-    
-    
-}
-
-
 @media screen and (max-width:898px) {
-
-    .user_header{
+    .user_header, .user_content{
         width: 80%;
     }
-    .user_content{
-        width: 80%;
-
-    }
-
-    
 }
+
 
 @media screen and (max-width:568px) {
 
-    .user_header{
-        width: 70%;
+    .user_header, .user_content{
+        width: 65%;
     }
-    .user_content{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-style: normal;
-        width: 70%;
-        height: 47px;
-        font-size: 14px;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        color: #000000;
-        margin: 10px 0;
-    }
-
+    
     
 }

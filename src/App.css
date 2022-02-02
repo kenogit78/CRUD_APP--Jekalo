@@ -16,6 +16,7 @@ body {
 @media screen and (max-width:568px) {
   body {
     align-items:baseline;
+    overflow: hidden;
   }
 
   
