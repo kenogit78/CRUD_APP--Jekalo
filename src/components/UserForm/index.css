@@ -1,6 +1,8 @@
 
 .user_list{
     padding: 4em 0 ;
+    max-width: 100vw;
+    /* overflow: hidden; */
 }
 
 .input-form{
@@ -63,6 +65,7 @@
     .user_list{
         display: flex;
         flex-direction: column;
+ 
     }
 }
 
@@ -71,9 +74,14 @@
     .input-form{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .input-form button{
         margin: 10px 20px 10px 0;
+    }
+    .input-div{
+       /* align-items: center; */
+       justify-content: center;
     }
     
 }

@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px 10px;
+    margin: 30px 0; 
 }
 
 .user_header{
@@ -41,6 +41,7 @@
 
 .user li{
     list-style: none;
+    width: 100%
 }
 
 
@@ -77,7 +78,8 @@
 }
 
 .user .date_delete .trash{
-    width:50px
+    width:50px;
+  
 }
 
 .user .date_delete .trash:hover{
@@ -87,16 +89,43 @@
 
 @media screen and (max-width:898px) {
     .user_header, .user_content{
-        width: 80%;
+        max-width: 90%;
+        overflow-x: hidden;
+        
     }
 }
 
 
-@media screen and (max-width:568px) {
-
-    .user_header, .user_content{
-        width: 60%;
+@media screen and (max-width:385px) {
+    .user_content{
+        width: 350px;
     }
-    
-    
+
+    .user_header{
+        width: 350px;
+        text-align: center;
+    }
+  
+    .user ul{
+        justify-content: space-between;
+    }
+
+    .user .name_details{
+        width: 200px;
+    }
+    .user .name_details .name{
+        /* width: 50px; */
+        flex:1;
+        margin: 0 8px;
+    }
+    .user .date_delete {
+        /* width: 100px; */
+        flex: 1;
+        margin: 0 3px;
+    }
+    .user .name_prefix{
+        width: 30px;
+        
+    }
+       
 }

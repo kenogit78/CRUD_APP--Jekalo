@@ -11,11 +11,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width:568px) {
   body {
     align-items:baseline;
+  }
+
+  
+}
+@media screen and (max-width:380px) {
+
+  .App{
+    max-width: 350px;
     overflow-x: hidden;
   }
 
