@@ -28,7 +28,7 @@ function UserForm() {
   const postUser = () => {
     postApi('user', { first_name: state.firstName, last_name: state.lastName, username: state.username, date_of_birth: state.dob })
     .then((response) => {
-          console.log(response);
+          window.location.reload(false); //reload window to get the current data
           return response
         }, (error) => {
           console.log(error);
@@ -57,7 +57,6 @@ function UserForm() {
   const handleSubmit = e => {
     e.preventDefault();
     postUser();
-    window.location.reload(false);
     setState({ firstName: "", lastName: "", username: "", dob: "" });
   };
 
